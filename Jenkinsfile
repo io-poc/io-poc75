@@ -36,7 +36,7 @@ pipeline {
                         repositoryName: 'poc-88'), 
                     jira(
                          assignee: 'karn@synopsys.com', 
-                         configName: 'jira-sandbox', 
+                         configName: 'jira-poc-75', 
                          issueQuery: 'resolution=Unresolved', 
                          projectKey: 'INSEC', 
                          projectName: 'insecure-bank') 
@@ -71,7 +71,7 @@ pipeline {
                 echo 'Running SAST using Polaris'
                 synopsysIO(connectors: [
                     [$class: 'PolarisPipelineConfig',
-                    configName: 'csprod-polaris',
+                    configName: 'polaris-75',
                     projectName: 'codedx-insecure-bank']]) {
                     sh 'io --stage execution --state io_state.json'
                 }
@@ -110,7 +110,7 @@ pipeline {
             steps {
               echo 'Running SCA using BlackDuck'
               synopsysIO(connectors: [
-                  blackduck(configName: 'BIZDevBD',
+                  blackduck(configName: 'blackduck-75',
                   projectName: 'codedx-insecure-bank',
                   projectVersion: '1.0')]) {
                   sh 'io --stage execution --state io_state.json'
