@@ -33,7 +33,7 @@ pipeline {
                         branch: 'master',
                         configName: 'git-ozviper',
                         owner: 'io-poc',
-                        repositoryName: 'poc-75'), 
+                        repositoryName: 'io-poc-75'), 
                     jira(
                          assignee: 'admin', 
                          configName: 'jira-poc-75', 
