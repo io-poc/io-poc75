@@ -15,7 +15,7 @@ def ioRunAPI = "/api/ioiq/api/orchestration/runs/"
 def gitHubPOCId = 'git-ozviper'
 def gitHubOwner = 'OzViper'
 def scmBranch = fileBranchName
-def scmRepoName = 'insecure-bank'
+def scmRepoName = 'io-poc75'
 def scmRevisionDate = ''
 
 // AST - Polaris
