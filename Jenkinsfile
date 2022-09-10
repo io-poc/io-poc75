@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout Source Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/io-poc/poc-88'
+                git branch: 'master', url: 'https://github.com/io-poc/poc-75'
             }
         }
 
@@ -31,9 +31,9 @@ pipeline {
                         workflowVersion: '2022.4.1'),
                     github(
                         branch: 'master',
-                        configName: 'git-ozviper',
+                        configName: 'ozviper',
                         owner: 'io-poc',
-                        repositoryName: 'poc-88'), 
+                        repositoryName: 'poc-75'), 
                     jira(
                          assignee: 'karn@synopsys.com', 
                          configName: 'jira-poc-75', 
