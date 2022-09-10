@@ -31,11 +31,11 @@ pipeline {
                         workflowVersion: '2022.4.1'),
                     github(
                         branch: 'master',
-                        configName: 'ozviper',
+                        configName: 'git-ozviper',
                         owner: 'io-poc',
                         repositoryName: 'poc-75'), 
                     jira(
-                         assignee: 'karn@synopsys.com', 
+                         assignee: 'admin', 
                          configName: 'jira-poc-75', 
                          issueQuery: 'resolution=Unresolved', 
                          projectKey: 'INSEC', 
