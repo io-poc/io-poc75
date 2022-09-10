@@ -13,7 +13,7 @@ def ioRunAPI = "/api/ioiq/api/orchestration/runs/"
 
 // SCM - GitHub
 def gitHubPOCId = 'git-ozviper'
-def gitHubOwner = 'OzViper'
+def gitHubOwner = 'io-poc'
 def scmBranch = fileBranchName
 def scmRepoName = 'io-poc75'
 def scmRevisionDate = ''
