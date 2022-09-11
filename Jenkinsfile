@@ -32,12 +32,12 @@ def blackDuckProjectVersion = fileBranchName
 def jiraAssignee = 'admin'
 def jiraConfigName = 'jira-poc-75'
 def jiraIssueQuery = 'resolution=Unresolved'
-def jiraProjectKey = 'IRMOB'
-def jiraProjectName = 'IRMOB'
+def jiraProjectKey = 'IN'
+def jiraProjectName = 'insecure-bank'
 
 // Code Dx Configuration
 def codeDxConfigName = 'poc75-codedx'
-def codeDxProjectId = '2'
+def codeDxProjectId = '1'
 def codeDxInstnceURL = 'https://poc75.codedx.synopsys.com/codedx'
 def codeDxProjectAPI = '/api/projects/'
 def codeDxAnalysisEndpoint = '/analysis'
