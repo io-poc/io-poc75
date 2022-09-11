@@ -7,7 +7,7 @@ def fileBranchName = 'master'
 // IO Environment
 def ioPOCId = 'IO-POC-75'
 def ioProjectName = fileProjectName
-def ioWorkflowEngineVersion = '2022.4.1'
+def ioWorkflowEngineVersion = '2022.7.0'
 def ioServerURL = "https://io75.codedx.synopsys.com"
 def ioRunAPI = "/api/ioiq/api/orchestration/runs/"
 
@@ -30,7 +30,7 @@ def blackDuckProjectVersion = fileBranchName
 
 // BTS Configuration
 def jiraAssignee = 'admin'
-def jiraConfigName = 'jira-poc75'
+def jiraConfigName = 'jira-poc-75'
 def jiraIssueQuery = 'resolution=Unresolved'
 def jiraProjectKey = 'IRMOB'
 def jiraProjectName = 'IRMOB'
